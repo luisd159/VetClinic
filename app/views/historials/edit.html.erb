@@ -1,0 +1,14 @@
+<h4> Edit page </h4>
+
+<%= form_for @historial do |f| %>
+    <div>
+      <%= f.label :owner_name  %>
+      <%= f.text_field :owner_name  %>
+    <div>
+      <%= f.label :consult_reason  %>
+      <%= f.text_field :consult_reason  %>
+    </div>
+      <%= f.submit %>
+    </div>
+  <% end %>
+

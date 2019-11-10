@@ -1,12 +1,22 @@
 
 <h1>Listing all the historials</h1>
 
-<% @historials.each do |historial| %>
-  <div>
-    <h4>Owner Name: <%= historial.owner_name %></h4>
-    <h4>Reason: <%= historial.consult_reason %></h4>
-  </div>
-<% end %>
+<table>
+  <tr>
+    <th>Owner Name</th>
+    <th>Reason</th>
+  </tr>
+
+  <% @historials.each do |historial| %>
+    <tr>
+      <td><%= historial.owner_name %></td>
+      <td><%= historial.consult_reason %></td>
+      <td><%= link_to "Edit", edit_historial_path(historial) %></td>
+      <td><%= link_to "Delete", historial_path(historial), method: :delete, data: {confirm: "Are you sure you want to delete this historial?"} %></td>
+      <td><%= link_to "Show More", historial_path(historial) %></td>
+      </tr>
+  <% end %>
+</table>
 
 <%= link_to "Create a new historial", new_historial_path %>
 
