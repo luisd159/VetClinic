@@ -1,0 +1,9 @@
+
+<h1>Listing all the historials</h1>
+
+<% @historials.each do |historial| %>
+  <div>
+    <h4>Owner Name: <%= historial.owner_name %></h4>
+    <h4>Reason: <%= historial.consult_reason %></h4>
+  </div>
+<% end %>
