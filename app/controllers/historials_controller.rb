@@ -40,12 +40,14 @@ class HistorialsController < ApplicationController
 
     def show
       @historial = Historial.find(params[:id])
+
+
     end
 
     private 
 
     def historial_params
-      params.require(:historial).permit(:owner_name, :consult_reason)
+      params.require(:historial).permit(:owner_name, :consult_reason, :pet_name)
     end
 
     

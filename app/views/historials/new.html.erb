@@ -5,7 +5,7 @@
   <ul>
     <% @historial.errors.full_messages.each do |msg| %>
       <li> <%= msg %> </li>
-    <% end %>
+    <% end %> 
   </ul>
 <% end %>
 
@@ -16,6 +16,10 @@
     <div>
     <%= f.label :consult_reason  %>
     <%= f.text_field :consult_reason  %>
+    </div>
+    <div>
+    <%= f.label :pet_name  %>
+    <%= f.text_field :pet_name  %>
     </div>
     <%= f.submit %>
   </div>
