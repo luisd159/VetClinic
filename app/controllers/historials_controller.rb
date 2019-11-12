@@ -47,7 +47,8 @@ class HistorialsController < ApplicationController
     private 
 
     def historial_params
-      params.require(:historial).permit(:owner_name, :consult_reason, :pet_name)
+      params.require(:historial).permit(:owner_name,:owner_phone,:owner_address,:owner_document,
+      :pet_name, :pet_breed, :pet_species, :pet_color, :pet_age, :consult_reason)
     end
 
     
