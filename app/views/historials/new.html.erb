@@ -10,10 +10,11 @@
 <% end %>
 
 <%= form_for @historial do |f| %>
-
-  <div>
+  
+    <div>
       <%= f.label :owner_name  %>
       <%= f.text_field :owner_name  %>
+    <div>
     <div>
       <%= f.label :owner_phone  %>
       <%= f.text_field :owner_phone  %>
@@ -51,7 +52,9 @@
       <%= f.text_area :consult_reason  %>
     </div>
     </div>
+    
       <%= f.submit %>
     </div>
 <% end %>
 
+<%= link_to "Back", historials_path, class: "btn btn-xs btn-warning" %></td>
