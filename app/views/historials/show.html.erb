@@ -1,15 +1,50 @@
+<div class="panel panel-default">
+  <div class="panel-body">  
+<table class="table table-bordered">
+    <tr>
+      <td>
+      <h3> Owner name: <normal> <%= @historial.owner_name %> </Normal> </h3>
+      </td>
+      <td>
+      <h3> Owner phone: <normal> <%= @historial.owner_phone %> </Normal> </h3>
+      </td> 
+      <td>
+      <h3> Owner address: <normal> <%= @historial.owner_address %> </Normal> </h3>
+      </td>
+      </tr>
 
+      <tr>
+      <td>
+      <h3> Owner document: <normal> <%= @historial.owner_document %> </Normal> </h3>
+      </td>
+      <td>
+      <h3> Pet name: <normal> <%= @historial.pet_name %> </Normal> </h3>
+      </td>
+      <td>
+      <h3> Pet breed: <normal> <%= @historial.pet_breed %> </Normal> </h3>
+      </td>
+      </tr>
 
-<h3> This is the owner name: <small> <%= @historial.owner_name %> </normal> </h3>
-<h3> This is the owner phone: <small> <%= @historial.owner_phone %> </small> </h3>
-<h3> This is the owner address: <small> <%= @historial.owner_address %> </small> </h3>
-<h3> This is the owner document: <small> <%= @historial.owner_document %> </small> </h3>
-<h3> This is the pet name: <small> <%= @historial.pet_name %> </small> </h3>
-<h3> This is the pet breed: <small> <%= @historial.pet_breed %> </small> </h3>
-<h3> This is the pet species: <small> <%= @historial.pet_species %> </small> </h3>
-<h3> This is the pet color: <small> <%= @historial.pet_color %> </small> </h3>
-<h3> This is the pet age: <small> <%= @historial.pet_age %> </small> </h3>
-<h3> This is the reason: <small> <%= @historial.consult_reason %> </small> </h3>
+      <tr>
+      <td>
+      <h3> Pet species: <normal> <%= @historial.pet_species %> </Normal> </h3>
+      </td>
+      <td>
+      <h3> Pet color: <normal> <%= @historial.pet_color %> </Normal> </h3>
+      </td>
+      <td>
+      <h3> Pet age: <normal> <%= @historial.pet_age %> </Normal> </h3>
+      </td>
+      </tr>
+
+      <tr>
+      <td>
+      <h3> Reason: <normal> <%= @historial.consult_reason %> </Normal> </h3>
+      </td>
+    </div>
+  </table>
+  </div>
+  </div>
 
 
 <%= link_to "Edit", edit_historial_path(@historial),  class: "btn btn-xs btn-success" %></td>
