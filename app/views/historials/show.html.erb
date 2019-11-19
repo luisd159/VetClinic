@@ -1,50 +1,52 @@
+<center><div class="well well-lg "><h3>Historial</h3></div></center>
+
 <div class="panel panel-default">
   <div class="panel-body">  
-<table class="table table-bordered">
-    <tr>
-      <td>
-      <h3> Owner name: <normal> <%= @historial.owner_name %> </Normal> </h3>
-      </td>
-      <td>
-      <h3> Owner phone: <normal> <%= @historial.owner_phone %> </Normal> </h3>
-      </td> 
-      <td>
-      <h3> Owner address: <normal> <%= @historial.owner_address %> </Normal> </h3>
-      </td>
-      </tr>
+    <table class="table table-bordered">
+        <tr>
+          <td>
+            <h3> Owner name: <normal> <%= @historial.owner_name %> </Normal> </h3>
+          </td>
+          <td>
+            <h3> Owner phone: <normal> <%= @historial.owner_phone %> </Normal> </h3>
+          </td> 
+          <td>
+            <h3> Owner address: <normal> <%= @historial.owner_address %> </Normal> </h3>
+          </td>
+        </tr>
 
-      <tr>
-      <td>
-      <h3> Owner document: <normal> <%= @historial.owner_document %> </Normal> </h3>
-      </td>
-      <td>
-      <h3> Pet name: <normal> <%= @historial.pet_name %> </Normal> </h3>
-      </td>
-      <td>
-      <h3> Pet breed: <normal> <%= @historial.pet_breed %> </Normal> </h3>
-      </td>
-      </tr>
+        <tr>
+          <td>
+            <h3> Owner document: <normal> <%= @historial.owner_document %> </Normal> </h3>
+          </td>
+          <td>
+            <h3> Pet name: <normal> <%= @historial.pet_name %> </Normal> </h3>
+          </td>
+          <td>
+            <h3> Pet breed: <normal> <%= @historial.pet_breed %> </Normal> </h3>
+          </td>
+        </tr>
 
-      <tr>
-      <td>
-      <h3> Pet species: <normal> <%= @historial.pet_species %> </Normal> </h3>
-      </td>
-      <td>
-      <h3> Pet color: <normal> <%= @historial.pet_color %> </Normal> </h3>
-      </td>
-      <td>
-      <h3> Pet age: <normal> <%= @historial.pet_age %> </Normal> </h3>
-      </td>
-      </tr>
+        <tr>
+          <td>
+            <h3> Pet species: <normal> <%= @historial.pet_species %> </Normal> </h3>
+          </td>
+          <td>
+            <h3> Pet color: <normal> <%= @historial.pet_color %> </Normal> </h3>
+          </td>
+          <td>
+            <h3> Pet age: <normal> <%= @historial.pet_age %> </Normal> </h3>
+          </td>
+        </tr>
 
-      <tr>
-      <td>
-      <h3> Reason: <normal> <%= @historial.consult_reason %> </Normal> </h3>
-      </td>
-    </div>
-  </table>
+        <tr>
+          <td>
+            <h3> Reason: <normal> <%= @historial.consult_reason %> </Normal> </h3>
+          </td>
+        </tr>  
+    </table>
   </div>
-  </div>
+</div>
 
 
 <%= link_to "Edit", edit_historial_path(@historial),  class: "btn btn-xs btn-success" %></td>

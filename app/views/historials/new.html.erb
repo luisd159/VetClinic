@@ -1,5 +1,5 @@
 
-<h1> Create a new Historial </h1>
+<center><div class="well well-lg "><h3>Create a new historial</h3></div></center>
 
 <% if @historial.errors.any? %>
   <ul>
@@ -10,62 +10,63 @@
 <% end %>
 
 <%= form_for @historial do |f| %>
-<div class="panel panel-default">
-  <div class="panel-body">  
-<table class="table table-bordered">
-    <tr>
-      <td>
-        <%= f.label :owner_name  %>
-        <%= f.text_field :owner_name  %>
-      </td>
-      <td>
-        <%= f.label :owner_phone  %>
-        <%= f.text_field :owner_phone  %>
-      </td> 
-      <td>
-        <%= f.label :owner_address  %>
-        <%= f.text_field :owner_address  %>
-      </td>
-      </tr>
+  <div class="panel panel-default">
+    <div class="panel-body">  
+      <table class="table table-bordered">
+        <tr>
+          <td>
+            <%= f.label :owner_name  %>
+            <%= f.text_field :owner_name  %>
+          </td>
+          <td>
+            <%= f.label :owner_phone  %>
+            <%= f.text_field :owner_phone  %>
+          </td> 
+          <td>
+            <%= f.label :owner_address  %>
+            <%= f.text_field :owner_address  %>
+          </td>
+        </tr>
 
-      <tr>
-      <td>
-        <%= f.label :owner_document  %>
-        <%= f.text_field :owner_document  %>
-      </td>
-      <td>
-        <%= f.label :pet_name  %>
-        <%= f.text_field :pet_name  %>
-      </td>
-      <td>
-        <%= f.label :pet_breed  %>
-        <%= f.text_field :pet_breed  %>
-      </td>
-      </tr>
+        <tr>
+          <td>
+            <%= f.label :owner_document  %>
+            <%= f.text_field :owner_document  %>
+          </td>
+          <td>
+            <%= f.label :pet_name  %>
+            <%= f.text_field :pet_name  %>
+          </td>
+          <td>
+            <%= f.label :pet_breed  %>
+            <%= f.text_field :pet_breed  %>
+          </td>
+        </tr>
 
-      <tr>
-      <td>
-        <%= f.label :pet_species  %>
-        <%= f.text_field :pet_species  %>
-      </td>
-      <td>
-        <%= f.label :pet_color  %>
-        <%= f.text_field :pet_color  %>
-      </td>
-      <td>
-        <%= f.label :pet_age  %>
-        <%= f.text_field :pet_age  %>
-      </td>
-      </tr>
+          <tr>
+          <td>
+            <%= f.label :pet_species  %>
+            <%= f.text_field :pet_species  %>
+          </td>
+          <td>
+            <%= f.label :pet_color  %>
+            <%= f.text_field :pet_color  %>
+          </td>
+          <td>
+            <%= f.label :pet_age  %>
+            <%= f.text_field :pet_age  %>
+          </td>
+        </tr>
 
-      <tr>
-      <td>
-        <%= f.label :consult_reason  %>
-        <%= f.text_area :consult_reason  %>
-      </td>
+        <tr>
+          <td>
+            <%= f.label :consult_reason  %>
+            <%= f.text_area :consult_reason  %>
+          </td>
+        </tr>  
+      </table>
     </div>
-  </table>
   </div>
-  </div>
+
   <%= f.submit%>
-  <% end %>
+<% end %>
