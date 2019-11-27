@@ -8,7 +8,7 @@ class HistorialsController < ApplicationController
     def create
       @historial = Historial.new(historial_params)
       if @historial.save
-        flash[:notice] = "Historial was successsfully created"
+        flash[:create] = "Historial was successsfully created"
         redirect_to historials_path
         
       else
@@ -23,7 +23,7 @@ class HistorialsController < ApplicationController
     def update
       @historial = Historial.find(params[:id])
       if @historial.update(historial_params)
-        flash[:notice] = "Historial was successsfully updated"
+        flash[:update] = "Historial was successsfully updated"
         redirect_to historials_path
         
       else
@@ -34,7 +34,7 @@ class HistorialsController < ApplicationController
     def destroy
       @historial = Historial.find(params[:id])
       @historial.destroy
-      flash[:notice] = "Historial was successsfully deleted"
+      flash[:destroy] = "Historial was successsfully deleted"
         redirect_to historials_path
     end
 

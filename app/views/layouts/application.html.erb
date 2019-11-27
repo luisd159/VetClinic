@@ -2,28 +2,22 @@
 <html> 
 
 <ul class="nav nav-pills" style="background-color: #23374D;" >
-    <h2 style="color:#E5E5E5; margin-left: 10px;" > Vet Clinic </h2>
-    <%= image_tag "logo.jpg", class: "img-responsive tamano" %>
+    <h2 style="color:#E5E5E5; margin-left: 10px;" > NanyVet </h2>
+    <%= image_tag "logo.png" , class: "img-responsive tamano" %>
      <div class="container"> 
       <ul class="nav nav-pills">
-          <li role="presentation"><a href="/">Home</a></li>
-          <li role="presentation"><a href="/historials">Show Historials</a></li>
-          <li role="presentation"><a href="/historials/new" >Create Historial</a></li>
-          <li role="presentation"><a href="/about">About us</a></li>
-        
-          <ul class="nav nav-pills navbar-right">
-            <button type="button" class="btn btn-default navbar-btn">Sign in</button>
-            <button type="button" class="btn btn-default navbar-btn">Sign up</button>
-          </ul>
-        </ul>
-      </div>
+        <li role="presentation"><a href="/">Home</a></li>
+        <li role="presentation"><a href="/historials">Show Historials</a></li>
+        <li role="presentation"><a href="/historials/new" >New Historial</a></li>
+        <li role="presentation"><a href="/about">About us</a></li>
+      </ul>
+    </div>
 </ul>
 
   <head>
-    <title>Vet Clinic</title>
+    <title>NanyVet</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -31,7 +25,7 @@
   <body>
     <% flash.each do |name, msg| %>
       <ul>
-        <li> <%= msg %> </li>
+          <div class="alert alert-success" role="alert"><%= msg %></div>
       </ul>
     <% end %>
     <div class="container">
